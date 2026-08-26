@@ -13,7 +13,7 @@
 
     <!-- 内容区 -->
     <main class="container">
-      <p>随便写点不是吧</p>
+      <home></home>
     </main>
 
     <!-- 页脚 -->
@@ -29,35 +29,42 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body,
-#app {
-  height: 100%;
-}
-#box {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 body {
   font-family:
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
-    "Segoe UI",
+    'Segoe UI',
     Roboto,
     Oxygen,
     Ubuntu,
     Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
+    'Open Sans',
+    'Helvetica Neue',
     sans-serif;
   background: #f5f5f5;
   color: #333;
 }
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#box {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 头 */
 .navbar {
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
   align-items: center;
   padding: 16px 40px;
   background: #fff;
@@ -73,11 +80,15 @@ body {
   text-decoration: none;
   color: #333;
 }
+
+/* 肚子 */
 .container {
   max-width: 960px;
   margin: 40px auto;
   padding: 0 20px;
 }
+
+/* 脚 */
 .footer {
   margin-top: auto;
   text-align: center;
@@ -85,5 +96,6 @@ body {
   color: #999;
   font-size: 14px;
   border-top: 1px solid #eee;
+  bottom: 0;
 }
 </style>
