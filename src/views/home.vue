@@ -1,69 +1,74 @@
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
+import prearticles from '../testDate/testData'
 
-const articles = ref([
-  {
-    id: 1,
-    title: 'Vue3 入门完全指南',
-    summary:
-      '从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。',
-    date: '2024-05-10',
-    category: 'Vue',
-    cover: './images/测试图片.png',
-  },
-  {
-    id: 2,
-    title: 'JavaScript 异步编程详解',
-    summary: '一文搞懂 Promise、async/await、事件循环与微任务队列。',
-    date: '2024-05-08',
-    category: 'JavaScript',
-    cover: './images/测试图片.png',
-  },
-  {
-    id: 3,
-    title: 'CSS Grid 布局实战',
-    summary: '用 CSS Grid 轻松实现复杂的响应式布局。',
-    date: '2024-05-05',
-    category: 'CSS',
-    cover: './images/测试图片.png',
-  },
-  // {
-  //   id: 4,
-  //   title: "Vue3 入门完全指南",
-  //   summary: "从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。",
-  //   date: "2024-05-10",
-  //   category: "Vue",
-  //   cover: "#",
-  // },
-  // {
-  //   id: 5,
-  //   title: "JavaScript 异步编程详解",
-  //   summary: "一文搞懂 Promise、async/await、事件循环与微任务队列。",
-  //   date: "2024-05-08",
-  //   category: "JavaScript",
-  //   cover: "#",
-  // },
-  // {
-  //   id: 6,
-  //   title: "CSS Grid 布局实战",
-  //   summary: "用 CSS Grid 轻松实现复杂的响应式布局。",
-  //   date: "2024-05-05",
-  //   category: "CSS",
-  //   cover: "#",
-  // },
-])
+// const articles = ref([
+//   {
+//     id: 1,
+//     title: 'Vue3 入门完全指南',
+//     summary:
+//       '从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。',
+//     date: '2024-05-10',
+//     category: 'Vue',
+//     cover: './images/测试图片.png',
+//   },
+//   {
+//     id: 2,
+//     title: 'JavaScript 异步编程详解',
+//     summary: '一文搞懂 Promise、async/await、事件循环与微任务队列。',
+//     date: '2024-05-08',
+//     category: 'JavaScript',
+//     cover: './images/测试图片.png',
+//   },
+//   {
+//     id: 3,
+//     title: 'CSS Grid 布局实战',
+//     summary: '用 CSS Grid 轻松实现复杂的响应式布局。',
+//     date: '2024-05-05',
+//     category: 'CSS',
+//     cover: './images/测试图片.png',
+//   },
+// ])
+// 获取所有标签
+
+const articles = ref(prearticles)
+const categories = computed(() => {
+  const all = articles.value.map((a) => a.category)
+  return ['全部', ...new Set(all)]
+})
+// 当前选中标签
+const activeCategory = ref('全部')
+// 根据标签过滤文章
+const filteredArticles = computed(() => {
+  if (activeCategory.value === '全部') {
+    return articles.value
+  }
+  return articles.value.filter((a) => a.category === activeCategory.value)
+})
 </script>
 
 <template>
   <div class="home">
     <h2 v-if="articles.length" class="section-title">动态</h2>
 
+    <div class="category-bar">
+      <button
+        v-for="each in categories"
+        :key="each"
+        :class="{ active: activeCategory === each }"
+        @click="activeCategory = each"
+      >
+        {{ each }}
+      </button>
+    </div>
+    <p class="res-info">共{{ filteredArticles.length }}条</p>
+
     <!-- 加载中 -->
     <p v-if="!articles.length" class="empty-tip">还没有文章，敬请期待。</p>
     <!-- 文章列表 -->
     <div v-else class="article-grid">
       <!-- 文章卡片 -->
-      <div v-for="article in articles" :key="article.id" class="article-card">
+      <div v-for="article in filteredArticles" :key="article.id" class="article-card">
         <img :src="article.cover" :alt="article.title" class="card-cover" />
         <div class="card-content">
           <span class="card-category">{{ article.category }}</span>
@@ -137,5 +142,38 @@ const articles = ref([
 .card-date {
   font-size: 12px;
   color: #999;
+}
+
+/* 筛选栏 */
+.category-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.category-bar button {
+  padding: 6px 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.category-bar button.active {
+  background: #85baff;
+  color: #fff;
+  border-color: #85baff;
+}
+.category-bar button:hover {
+  background: #85baff;
+  color: #fff;
+  border-color: #85baff;
+}
+
+.res-info {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 16px;
 }
 </style>
