@@ -1,15 +1,18 @@
-<script setup></script>
+<script setup>
+import NavBar from './components/NavBar.vue'
+</script>
 
 <template>
   <div id="box">
     <!-- 导航栏 -->
-    <header class="navbar">
+    <NavBar></NavBar>
+    <!-- <header class="navbar">
       <h1>yyy</h1>
       <nav>
         <a href="/">主页</a>
         <a href="#">主页2</a>
       </nav>
-    </header>
+    </header> -->
 
     <!-- 内容区 -->
     <main class="container">
@@ -59,7 +62,7 @@ body,
 }
 
 /* 头 */
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -78,7 +81,7 @@ body,
   margin-left: 20px;
   text-decoration: none;
   color: #333;
-}
+} */
 
 /* 肚子 */
 .container {
