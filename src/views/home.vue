@@ -49,6 +49,7 @@ function handleUpdate(cat) {
         :cover="article.cover"
         :date="article.date"
         :summary="article.summary"
+        :articleId="article.id"
       ></BlogCard>
     </div>
   </div>

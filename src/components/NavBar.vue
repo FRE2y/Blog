@@ -1,11 +1,13 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 
 <template>
   <header class="navbar">
     <h1>yyy</h1>
     <nav>
-      <a href="/">主页</a>
-      <a href="#">主页2</a>
+      <RouterLink to="/">主页</RouterLink>
+      <RouterLink to="/post">文章</RouterLink>
     </nav>
   </header>
 </template>

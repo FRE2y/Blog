@@ -6,17 +6,11 @@ import NavBar from './components/NavBar.vue'
   <div id="box">
     <!-- 导航栏 -->
     <NavBar></NavBar>
-    <!-- <header class="navbar">
-      <h1>yyy</h1>
-      <nav>
-        <a href="/">主页</a>
-        <a href="#">主页2</a>
-      </nav>
-    </header> -->
 
     <!-- 内容区 -->
     <main class="container">
-      <home></home>
+      <!-- <home></home> -->
+      <RouterView />
     </main>
 
     <!-- 页脚 -->

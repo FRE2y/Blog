@@ -5,21 +5,29 @@ const props = defineProps({
   summary: String, //摘要
   date: String, //日期
   cover: String, //封面图片
+  articleId: Number,
 })
 </script>
 
 <template>
-  <div class="article-card">
-    <img :src="cover" :alt="title" class="card-cover" />
-    <div class="card-content">
-      <span class="card-category">{{ category }}</span>
-      <h3 class="card-title">{{ title }}</h3>
-      <p class="card-summary">{{ summary }}</p>
-      <span class="card-date">{{ date }}</span>
+  <RouterLink :to="{ name: 'post', params: { id: articleId } }" class="router-link">
+    <div class="article-card">
+      <img :src="cover" :alt="title" class="card-cover" />
+      <div class="card-content">
+        <span class="card-category">{{ category }}</span>
+        <h3 class="card-title">{{ title }}</h3>
+        <p class="card-summary">{{ summary }}</p>
+        <span class="card-date">{{ date }}</span>
+      </div>
     </div>
-  </div>
+  </RouterLink>
 </template>
 <style scoped>
+.router-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 .article-card {
   background: #fff;
   border-radius: 12px;
