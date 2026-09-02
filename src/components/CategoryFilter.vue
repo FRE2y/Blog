@@ -18,7 +18,7 @@ function selectCategory(category) {
 </script>
 
 <template>
-  <div class="category-bar">
+  <div v-if="length != 0" class="category-bar">
     <button
       v-for="each in categories"
       :key="each"
@@ -28,7 +28,7 @@ function selectCategory(category) {
       {{ each }}
     </button>
   </div>
-  <p class="res-info">共{{ length }}条</p>
+  <p v-if="length != 0" class="res-info">共{{ length }}条</p>
 </template>
 
 <style scoped>

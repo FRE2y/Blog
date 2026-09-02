@@ -1,11 +1,36 @@
 <script setup>
 import { RouterLink, useRoute } from 'vue-router'
-import prearticles from '../testDate/testData'
-import { computed, ref } from 'vue'
+
+import { computed, ref, onMounted } from 'vue'
 
 const route = useRoute()
 const id = Number(route.params.id)
-const articles = ref(prearticles)
+
+const articles = ref([])
+const isLoading = ref(true)
+const error = ref(null)
+
+async function fetchPosts() {
+  isLoading.value = true
+  error.value = null
+  try {
+    const response = await fetch('/testData.json')
+    if (!response.ok) {
+      throw new Error(`加载失败 ${response.status}`)
+    }
+    const data = await response.json()
+    articles.value = data
+  } catch (err) {
+    error.value = err.message
+    console.error(`文章数据加载失败：`, err)
+  } finally {
+    isLoading.value = false
+  }
+}
+onMounted(() => {
+  fetchPosts()
+})
+
 const article = computed(() => {
   return articles.value.find((a) => a.id === id)
 })
@@ -13,7 +38,9 @@ const article = computed(() => {
 
 <template>
   <div class="post-view">
-    <div v-if="!article" class="not-found">
+    <p v-if="isLoading">加载中...</p>
+    <p v-else-if="error">加载失败：{{ error }}</p>
+    <div v-else-if="!article" class="not-found">
       <h2>文章不存在</h2>
       <p>找不到 ID 为 {{ id }} 的文章</p>
       <RouterLink to="/">返回首页</RouterLink>
@@ -28,6 +55,10 @@ const article = computed(() => {
   </div>
 </template>
 <style scoped>
+.bg {
+  width: 100%;
+  height: 100%;
+}
 .post-view {
   max-width: 720px;
   margin: 40px auto;

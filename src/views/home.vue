@@ -1,11 +1,34 @@
 <script setup>
-import { computed, ref } from 'vue'
-import prearticles from '../testDate/testData'
+import { computed, onMounted, ref } from 'vue'
+import prearticles from '../../public/testData'
 import BlogCard from '@/components/BlogCard.vue'
 import CategoryFilter from '@/components/CategoryFilter.vue'
 //文章载入
-const articles = ref(prearticles)
+const articles = ref([])
+const isLoading = ref(true)
+const error = ref(null)
 
+async function fetchPosts() {
+  isLoading.value = true
+  error.value = null
+  try {
+    const response = await fetch('/testData.json')
+    if (!response.ok) {
+      throw new Error(`加载失败 ${response.status}`)
+    }
+    const data = await response.json()
+    articles.value = data
+  } catch (err) {
+    error.value = err.message
+    console.error(`文章数据加载失败：`, err)
+  } finally {
+    isLoading.value = false
+  }
+}
+onMounted(() => {
+  fetchPosts()
+})
+//标签分类筛选功能
 const categories = computed(() => {
   const all = articles.value.map((a) => a.category)
   return ['全部', ...new Set(all)]
@@ -36,7 +59,12 @@ function handleUpdate(cat) {
     ></CategoryFilter>
 
     <!-- 加载中 -->
-    <p v-if="!articles.length" class="empty-tip">还没有文章，敬请期待。</p>
+    <p v-if="isLoading" class="status-msg">加载中，请稍后...</p>
+    <p v-else-if="error" class="error">
+      加载失败：{{ error }}
+      <button @click="fetchPosts">重试</button>
+    </p>
+    <p v-else-if="!articles.length" class="empty-tip">还没有文章，敬请期待。</p>
 
     <!-- 文章列表 -->
     <div v-else class="article-grid">
@@ -70,5 +98,20 @@ function handleUpdate(cat) {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(580px, 1fr));
   gap: 24px;
+}
+
+.status-msg {
+  text-align: center;
+  padding: 60px 0;
+  font-size: 16px;
+  color: #999;
+}
+.error {
+  color: #e74c3c;
+}
+.error button {
+  margin-left: 10px;
+  padding: 4px 12px;
+  cursor: pointer;
 }
 </style>

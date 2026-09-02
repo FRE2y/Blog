@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router'
     <h1>yyy</h1>
     <nav>
       <RouterLink to="/">主页</RouterLink>
-      <RouterLink to="/post">文章</RouterLink>
+      <RouterLink to="/post/1">最新文章</RouterLink>
     </nav>
   </header>
 </template>
