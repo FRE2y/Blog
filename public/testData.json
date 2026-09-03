@@ -5,7 +5,7 @@
     "summary": "从零开始学习 Vue3 组合式 API，涵盖 ref、reactive、computed 等核心概念。",
     "date": "2024-05-10",
     "category": "Vue",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>为什么学 Vue3？</h2>\n<p>Vue3 是目前最流行的前端框架之一，它易学、灵活、性能出色。</p>\n<h2>组合式 API 的优势</h2>\n<p>相比 Vue2 的选项式 API，组合式 API 让逻辑复用变得简单，代码组织更加灵活。</p>\n<h2>ref 与 reactive</h2>\n<p>ref 适合基本类型数据，reactive 适合对象和数组。但实际开发中推荐统一使用 ref。</p>"
   },
   {
@@ -14,7 +14,7 @@
     "summary": "一文搞懂 Promise、async/await、事件循环与微任务队列。",
     "date": "2024-05-08",
     "category": "JavaScript",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>什么是异步？</h2>\n<p>JS 是单线程的，异步操作可以让主线程不阻塞，同时处理网络请求、定时器等任务。</p>\n<h2>Promise 的核心概念</h2>\n<p>Promise 有三种状态：pending（进行中）、fulfilled（已成功）、rejected（已失败）。</p>\n<h2>async/await 语法糖</h2>\n<p>async/await 让异步代码写起来像同步代码一样直观，大幅降低了回调地狱的问题。</p>"
   },
   {
@@ -23,7 +23,7 @@
     "summary": "用 CSS Grid 轻松实现复杂的响应式布局。",
     "date": "2024-05-05",
     "category": "CSS",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Grid vs Flexbox</h2>\n<p>Flexbox 是一维布局，Grid 是二维布局。Grid 更适合整体页面结构，Flexbox 适合组件内部排列。</p>\n<h2>核心属性</h2>\n<p>grid-template-columns、grid-template-rows、grid-area 等属性是 Grid 布局的核心。</p>\n<h2>响应式技巧</h2>\n<p>结合 auto-fit、minmax 和媒体查询，可以轻松实现自适应网格布局。</p>"
   },
   {
@@ -32,7 +32,7 @@
     "summary": "深入理解 useState、useEffect、useCallback 的工作原理与最佳实践。",
     "date": "2024-05-03",
     "category": "React",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>为什么引入 Hooks？</h2>\n<p>Hooks 解决了类组件中逻辑复用困难、生命周期方法臃肿、this 指向混乱等问题。</p>\n<h2>useState 原理</h2>\n<p>useState 基于链表结构存储状态，每次渲染都有独立的闭包环境。</p>\n<h2>useEffect 的依赖数组</h2>\n<p>依赖数组决定了副作用何时重新执行，空数组表示只在挂载和卸载时执行。</p>"
   },
   {
@@ -41,7 +41,7 @@
     "summary": "从基础类型到高级类型编程，掌握 TS 类型系统的强大之处。",
     "date": "2024-05-01",
     "category": "TypeScript",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>类型系统基础</h2>\n<p>TypeScript 的核心价值在于编译时类型检查，减少运行时错误。</p>\n<h2>泛型编程</h2>\n<p>泛型让函数和接口能够处理多种类型，同时保持类型安全。</p>\n<h2>条件类型与映射类型</h2>\n<p>extends 关键字和 keyof 操作符是类型体操的基础工具。</p>"
   },
   {
@@ -50,7 +50,7 @@
     "summary": "剖析 Node.js 底层原理，提升服务端性能的实用技巧。",
     "date": "2024-04-28",
     "category": "Node.js",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>事件循环机制</h2>\n<p>理解 Node.js 事件循环的各个阶段，有助于编写高性能的非阻塞代码。</p>\n<h2>内存管理</h2>\n<p>V8 引擎的垃圾回收机制、内存泄漏排查方法和堆快照分析是性能调优的关键。</p>\n<h2>Cluster 模块</h2>\n<p>利用多核 CPU，通过 Cluster 模块创建子进程来提升吞吐量。</p>"
   },
   {
@@ -59,7 +59,7 @@
     "summary": "从零配置一个生产级 Webpack 项目，掌握 Loader 和 Plugin 开发。",
     "date": "2024-04-26",
     "category": "Webpack",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>核心概念</h2>\n<p>Entry、Output、Loader、Plugin 是 Webpack 的四大核心概念。</p>\n<h2>Loader 原理</h2>\n<p>Loader 本质是一个函数，接收源文件内容，返回转换后的结果。</p>\n<h2>Plugin 开发</h2>\n<p>Plugin 基于 Tapable 事件流机制，通过监听编译生命周期钩子来干预构建过程。</p>"
   },
   {
@@ -68,7 +68,7 @@
     "summary": "为什么 Vite 这么快？深入 ESM 与 Rollup 的构建流程。",
     "date": "2024-04-24",
     "category": "Vite",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>ESM 原生加载</h2>\n<p>开发环境下 Vite 利用浏览器原生 ESM 支持，按需编译模块，无需打包。</p>\n<h2>依赖预构建</h2>\n<p>Vite 用 esbuild 预构建依赖，将 CommonJS 转为 ESM，极大提升启动速度。</p>\n<h2>生产构建</h2>\n<p>生产环境使用 Rollup 进行打包，输出高度优化的静态资源。</p>"
   },
   {
@@ -77,7 +77,7 @@
     "summary": "rebase、cherry-pick、bisect…掌握 Git 高级用法。",
     "date": "2024-04-22",
     "category": "Git",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>交互式 Rebase</h2>\n<p>git rebase -i 可以合并、重排、修改提交，保持提交历史整洁。</p>\n<h2>Cherry-pick</h2>\n<p>将某个分支的指定提交应用到当前分支，适合选择性合并代码。</p>\n<h2>Bisect 二分查找</h2>\n<p>git bisect 通过二分法快速定位引入 bug 的那个提交。</p>"
   },
   {
@@ -86,7 +86,7 @@
     "summary": "从 Dockerfile 编写到 Kubernetes 编排，全流程容器化部署。",
     "date": "2024-04-20",
     "category": "Docker",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Dockerfile 最佳实践</h2>\n<p>多阶段构建、.dockerignore、最小化镜像层数是优化镜像的关键。</p>\n<h2>容器网络</h2>\n<p>bridge、host、overlay 等网络模式适用于不同的部署场景。</p>\n<h2>数据持久化</h2>\n<p>Volume 和 Bind Mount 解决容器数据丢失问题，实现数据持久化。</p>"
   },
   {
@@ -95,7 +95,7 @@
     "summary": "explain 执行计划分析，让你的查询速度提升 10 倍。",
     "date": "2024-04-18",
     "category": "MySQL",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>B+ 树索引结构</h2>\n<p>MySQL InnoDB 使用 B+ 树作为索引结构，支持范围查询和有序扫描。</p>\n<h2>最左前缀原则</h2>\n<p>联合索引遵循最左前缀原则，查询条件必须从索引的最左列开始才能命中。</p>\n<h2>Explain 分析</h2>\n<p>通过 EXPLAIN 查看执行计划，关注 type、key、rows、Extra 字段来优化查询。</p>"
   },
   {
@@ -104,7 +104,7 @@
     "summary": "缓存穿透、击穿、雪崩解决方案与分布式锁实现。",
     "date": "2024-04-16",
     "category": "Redis",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>缓存三大问题</h2>\n<p>穿透用布隆过滤器，击穿用互斥锁，雪崩用随机过期时间 + 高可用架构。</p>\n<h2>数据结构选择</h2>\n<p>String、Hash、List、Set、ZSet 各有适用场景，选对结构事半功倍。</p>\n<h2>分布式锁</h2>\n<p>基于 SETNX 实现分布式锁，注意设置过期时间和原子性操作。</p>"
   },
   {
@@ -113,7 +113,7 @@
     "summary": "从 HTTP/1.1 到 HTTP/3，深入理解网络协议演进。",
     "date": "2024-04-14",
     "category": "HTTP",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>HTTP/1.1 的局限</h2>\n<p>队头阻塞、头部冗余、连接无法复用是 HTTP/1.1 的主要痛点。</p>\n<h2>HTTP/2 改进</h2>\n<p>多路复用、头部压缩、服务器推送解决了 HTTP/1.1 的核心问题。</p>\n<h2>HTTP/3 与 QUIC</h2>\n<p>HTTP/3 基于 QUIC 协议，运行在 UDP 之上，彻底解决队头阻塞。</p>"
   },
   {
@@ -122,7 +122,7 @@
     "summary": "从输入 URL 到页面展示，浏览器中间做了什么？",
     "date": "2024-04-12",
     "category": "浏览器",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>关键渲染路径</h2>\n<p>DOM 树构建 → CSSOM 构建 → 渲染树 → 布局 → 绘制 → 合成。</p>\n<h2>回流与重绘</h2>\n<p>回流（Layout）比重绘（Paint）代价更高，应尽量减少触发回流的操作。</p>\n<h2>合成层</h2>\n<p>CSS transform 和 opacity 的动画会提升到合成层，由 GPU 加速。</p>"
   },
   {
@@ -131,7 +131,7 @@
     "summary": "首屏加载、渲染性能、内存优化，全方位提升网页速度。",
     "date": "2024-04-10",
     "category": "性能优化",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>加载性能</h2>\n<p>代码分割、懒加载、预加载、CDN 加速、Gzip 压缩是加载优化的核心手段。</p>\n<h2>渲染性能</h2>\n<p>减少 DOM 数量、避免强制同步布局、使用 requestAnimationFrame 优化动画。</p>\n<h2>内存优化</h2>\n<p>及时解绑事件监听器、避免闭包引用、使用弱引用 Map/Set 防止内存泄漏。</p>"
   },
   {
@@ -140,7 +140,7 @@
     "summary": "微信小程序从 0 到 1，掌握组件化开发与云函数。",
     "date": "2024-04-08",
     "category": "小程序",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>小程序架构</h2>\n<p>双线程模型：逻辑层运行在 JSCore，视图层运行在 WebView，通过 Native 通信。</p>\n<h2>组件化开发</h2>\n<p>自定义组件支持 slot、behaviors、组件间通信，提升代码复用性。</p>\n<h2>云开发</h2>\n<p>云函数、云数据库、云存储让小程序后端开发零运维。</p>"
   },
   {
@@ -149,7 +149,7 @@
     "summary": "Dart 语言基础 + Flutter 组件，一套代码多端运行。",
     "date": "2024-04-06",
     "category": "Flutter",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Widget 树</h2>\n<p>Flutter 中一切皆 Widget，Widget 是不可变的配置描述，Element 才是真正实例。</p>\n<h2>状态管理</h2>\n<p>Provider、Riverpod、Bloc 是主流状态管理方案，根据项目规模选择。</p>\n<h2>渲染引擎</h2>\n<p>Skia 引擎直接绘制 UI，不依赖平台原生控件，保证跨平台一致性。</p>"
   },
   {
@@ -158,7 +158,7 @@
     "summary": "Pandas + NumPy + Matplotlib，数据处理与可视化全流程。",
     "date": "2024-04-04",
     "category": "Python",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>NumPy 数组运算</h2>\n<p>ndarray 是 NumPy 的核心，支持向量化运算，比 Python 原生列表快得多。</p>\n<h2>Pandas 数据处理</h2>\n<p>Series 和 DataFrame 提供了强大的数据筛选、聚合、合并能力。</p>\n<h2>Matplotlib 可视化</h2>\n<p>折线图、散点图、柱状图、热力图，用数据讲述故事。</p>"
   },
   {
@@ -167,7 +167,7 @@
     "summary": "线程池、锁机制、JUC 工具包，高并发场景下的 Java 编程。",
     "date": "2024-04-02",
     "category": "Java",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>线程池原理</h2>\n<p>ThreadPoolExecutor 的七大参数决定了线程池的行为，核心线程数、队列、拒绝策略需合理配置。</p>\n<h2>synchronized vs ReentrantLock</h2>\n<p>synchronized 是 JVM 层面锁，ReentrantLock 是 API 层面锁，支持公平锁和可中断。</p>\n<h2>JUC 并发工具</h2>\n<p>CountDownLatch、CyclicBarrier、Semaphore 解决不同场景的线程协作问题。</p>"
   },
   {
@@ -176,7 +176,7 @@
     "summary": "Go 语言基础 + gRPC + 服务发现，构建高性能微服务。",
     "date": "2024-03-30",
     "category": "Go",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Goroutine 并发</h2>\n<p>轻量级线程，由 Go runtime 调度，创建成本极低，轻松支持百万并发。</p>\n<h2>Channel 通信</h2>\n<p>不要通过共享内存来通信，而要通过通信来共享内存。</p>\n<h2>gRPC 服务</h2>\n<p>基于 HTTP/2 和 Protocol Buffers，高性能、强类型的 RPC 框架。</p>"
   },
   {
@@ -185,7 +185,7 @@
     "summary": "理解 Rust 的所有权、借用与生命周期，写出内存安全代码。",
     "date": "2024-03-28",
     "category": "Rust",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>所有权规则</h2>\n<p>每个值有唯一所有者，所有者离开作用域值被丢弃，赋值和传参会转移所有权。</p>\n<h2>借用与引用</h2>\n<p>不可变借用允许多个，可变借用只能有一个，两者不能同时存在。</p>\n<h2>生命周期标注</h2>\n<p>生命周期标注确保引用始终有效，编译器通过借用检查器保证内存安全。</p>"
   },
   {
@@ -194,7 +194,7 @@
     "summary": "Schema 设计、Resolver 开发、性能优化，GraphQL 全栈开发指南。",
     "date": "2024-03-26",
     "category": "GraphQL",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Schema 定义语言</h2>\n<p>SDL 用类型系统描述 API，客户端可以精确声明需要哪些字段。</p>\n<h2>Resolver 解析链</h2>\n<p>每个字段都有对应的 Resolver 函数，支持逐层解析和并行执行。</p>\n<h2>N+1 查询问题</h2>\n<p>DataLoader 通过批处理和缓存解决 GraphQL 中的 N+1 查询问题。</p>"
   },
   {
@@ -203,7 +203,7 @@
     "summary": "从零实现一个聊天室，掌握 WebSocket 协议与心跳机制。",
     "date": "2024-03-24",
     "category": "WebSocket",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>协议握手</h2>\n<p>WebSocket 通过 HTTP Upgrade 头完成握手，之后切换为 WS 协议通信。</p>\n<h2>心跳机制</h2>\n<p>定时发送 ping/pong 帧检测连接存活，防止连接被中间代理断开。</p>\n<h2>房间与广播</h2>\n<p>服务端维护连接池，实现私聊、群聊、房间等实时通信模式。</p>"
   },
   {
@@ -212,7 +212,7 @@
     "summary": "Service Worker + Manifest，让网页拥有 App 般的体验。",
     "date": "2024-03-22",
     "category": "PWA",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Service Worker 生命周期</h2>\n<p>注册 → 安装 → 激活 → 控制页面，理解各阶段才能正确更新缓存。</p>\n<h2>缓存策略</h2>\n<p>Cache First、Network First、Stale While Revalidate 等策略适用于不同资源。</p>\n<h2>添加到主屏</h2>\n<p>Web App Manifest 配置图标、名称、启动方式，让用户从主屏打开。</p>"
   },
   {
@@ -221,7 +221,7 @@
     "summary": "着色器、顶点、纹理，用 WebGL 在浏览器中渲染 3D 场景。",
     "date": "2024-03-20",
     "category": "WebGL",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>渲染管线</h2>\n<p>顶点着色器 → 图元装配 → 光栅化 → 片段着色器 → 帧缓冲。</p>\n<h2>GLSL 着色器语言</h2>\n<p>类 C 语言，运行在 GPU 上，负责顶点变换和像素着色。</p>\n<h2>矩阵变换</h2>\n<p>模型矩阵、视图矩阵、投影矩阵的组合实现 3D 物体的位移、旋转、缩放和透视。</p>"
   },
   {
@@ -230,7 +230,7 @@
     "summary": "基于 Three.js 构建炫酷的 3D 网页效果与数据可视化。",
     "date": "2024-03-18",
     "category": "Three.js",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>三大核心对象</h2>\n<p>Scene（场景）、Camera（相机）、Renderer（渲染器）是 Three.js 的基础。</p>\n<h2>几何体与材质</h2>\n<p>Geometry 定义形状，Material 定义外观，Mesh 将两者结合。</p>\n<h2>光照与阴影</h2>\n<p>平行光、点光源、聚光灯配合阴影贴图，让场景更加真实。</p>"
   },
   {
@@ -239,7 +239,7 @@
     "summary": "2D Canvas 绘图 API、动画循环、粒子效果实现详解。",
     "date": "2024-03-16",
     "category": "Canvas",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Canvas API 基础</h2>\n<p>getContext('2d') 获取绘图上下文，路径、矩形、圆弧、文本等 API 绘制图形。</p>\n<h2>动画循环</h2>\n<p>requestAnimationFrame 提供流畅的动画循环，清屏 → 更新 → 重绘是标准模式。</p>\n<h2>粒子系统</h2>\n<p>每个粒子维护位置、速度、生命周期，用数组管理粒子池实现爆炸等效果。</p>"
   },
   {
@@ -248,7 +248,7 @@
     "summary": "SVG 基础语法、动画制作、与 CSS/JS 交互技巧。",
     "date": "2024-03-14",
     "category": "SVG",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>SVG 基本形状</h2>\n<p>rect、circle、ellipse、line、polygon、path 是 SVG 的六种基本形状。</p>\n<h2>Path 路径</h2>\n<p>M、L、C、Q、A 等命令组合可以绘制任意复杂曲线。</p>\n<h2>SMIL 动画</h2>\n<p>&lt;animate&gt;、&lt;animateTransform&gt; 标签实现声明式 SVG 动画。</p>"
   },
   {
@@ -257,7 +257,7 @@
     "summary": "断言、Mock、快照测试，为你的代码保驾护航。",
     "date": "2024-03-12",
     "category": "Jest",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>测试结构</h2>\n<p>describe 分组、test/it 定义用例、expect 做断言，清晰组织测试代码。</p>\n<h2>Mock 函数</h2>\n<p>jest.fn() 创建模拟函数，可以追踪调用、替换实现、改变返回值。</p>\n<h2>快照测试</h2>\n<p>toMatchSnapshot 捕获组件渲染输出，防止意外的 UI 变更。</p>"
   },
   {
@@ -266,7 +266,7 @@
     "summary": "真实浏览器环境下的 E2E 测试，模拟用户操作验证功能。",
     "date": "2024-03-10",
     "category": "Cypress",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>命令链</h2>\n<p>Cypress 命令是异步的，通过 .then() 或别名获取命令结果。</p>\n<h2>元素定位</h2>\n<p>优先使用 data-cy 属性定位元素，避免依赖 CSS 选择器导致测试脆弱。</p>\n<h2>网络拦截</h2>\n<p>cy.intercept() 拦截和修改 HTTP 请求，模拟各种后端响应场景。</p>"
   },
   {
@@ -275,7 +275,7 @@
     "summary": "State、Mutation、Action、Getter，Vue 应用状态管理最佳实践。",
     "date": "2024-03-08",
     "category": "Vuex",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>单向数据流</h2>\n<p>Vuex 强制单向数据流：View → Dispatch → Action → Commit → Mutation → State → View。</p>\n<h2>严格模式</h2>\n<p>strict: true 时，任何非 Mutation 触发的状态修改都会抛出错误。</p>\n<h2>模块化</h2>\n<p>按功能拆分模块，开启 namespaced 避免命名冲突。</p>"
   },
   {
@@ -284,7 +284,7 @@
     "summary": "Vue 官方推荐的新一代状态管理库，比 Vuex 更简洁。",
     "date": "2024-03-06",
     "category": "Pinia",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>为什么选择 Pinia？</h2>\n<p>去掉了 Mutation，API 更简洁；完美支持 TypeScript；DevTools 体验更好。</p>\n<h2>Store 定义</h2>\n<p>defineStore 接收 id 和 setup 函数或 options 对象，返回 store 实例。</p>\n<h2>组合式写法</h2>\n<p>Pinia 天然支持组合式 API，ref 做 state，computed 做 getter，函数做 action。</p>"
   },
   {
@@ -293,7 +293,7 @@
     "summary": "单一数据源、纯函数 reducer、中间件机制，Redux 核心思想解析。",
     "date": "2024-03-04",
     "category": "Redux",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>三大原则</h2>\n<p>单一数据源、状态只读、使用纯函数修改状态。</p>\n<h2>Reducer 组合</h2>\n<p>combineReducers 将多个子 reducer 合并，每个 reducer 只管理自己那部分状态。</p>\n<h2>中间件机制</h2>\n<p>applyMiddleware 扩展 dispatch，Redux Thunk、Redux Saga 都是中间件。</p>"
   },
   {
@@ -302,7 +302,7 @@
     "summary": "可观察对象 + 派生值 + 动作，MobX 的响应式哲学。",
     "date": "2024-03-02",
     "category": "MobX",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Observable 可观察</h2>\n<p>@observable 装饰器或 observable() 函数将普通数据转为可观察对象。</p>\n<h2>Computed 派生</h2>\n<p>@computed 定义派生值，只有依赖变化时才重新计算，带缓存。</p>\n<h2>Action 动作</h2>\n<p>@action 标记修改状态的函数，严格模式下只有通过 action 才能修改状态。</p>"
   },
   {
@@ -311,7 +311,7 @@
     "summary": "变量、嵌套、混合、函数，让 CSS 编写效率翻倍。",
     "date": "2024-02-28",
     "category": "Sass",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>变量与嵌套</h2>\n<p>$color-primary 定义变量，嵌套规则减少重复书写选择器。</p>\n<h2>Mixins 混合</h2>\n<p>@mixin 定义可复用样式块，@include 引入，支持传参。</p>\n<h2>继承与函数</h2>\n<p>@extend 复用样式声明，@function 定义自定义函数处理颜色、尺寸等。</p>"
   },
   {
@@ -320,7 +320,7 @@
     "summary": "Less 语法全解析，与 Sass 的对比与选择建议。",
     "date": "2024-02-26",
     "category": "Less",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Less 语法</h2>\n<p>变量用 @ 前缀，混合用 .mixin() 语法，与 Sass 类似但更简洁。</p>\n<h2>内置函数</h2>\n<p>color、math、string 等内置函数方便处理样式值。</p>\n<h2>与 Sass 对比</h2>\n<p>Sass 功能更丰富，Less 学习成本低。新项目推荐 Sass/SCSS。</p>"
   },
   {
@@ -329,7 +329,7 @@
     "summary": "原子化 CSS 框架，快速构建现代化 UI 界面。",
     "date": "2024-02-24",
     "category": "TailwindCSS",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>原子化思想</h2>\n<p>每个工具类只做一件事，直接在 HTML 中组合类名构建样式。</p>\n<h2>响应式设计</h2>\n<p>sm:、md:、lg:、xl: 前缀实现移动优先的响应式设计。</p>\n<h2>JIT 模式</h2>\n<p>Just-In-Time 编译只生成用到的 CSS，开发和生产构建都极快。</p>"
   },
   {
@@ -338,7 +338,7 @@
     "summary": "企业级 UI 设计体系，React/Vue 版本的使用技巧与定制主题。",
     "date": "2024-02-22",
     "category": "AntDesign",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>设计价值观</h2>\n<p>自然、确定、意义、成长，Ant Design 的设计原则指导组件使用方式。</p>\n<h2>主题定制</h2>\n<p>通过 ConfigProvider 或 Less 变量覆盖，修改品牌色、圆角、字体等。</p>\n<h2>Pro Components</h2>\n<p>ProTable、ProForm、ProLayout 等高级组件加速中后台开发。</p>"
   },
   {
@@ -347,7 +347,7 @@
     "summary": "Vue 3 生态最流行的组件库，常用组件与二次封装技巧。",
     "date": "2024-02-20",
     "category": "ElementPlus",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>常用组件</h2>\n<p>Table、Form、Dialog、Pagination 是后台管理系统中最常用的组件。</p>\n<h2>按需引入</h2>\n<p>unplugin-vue-components 自动按需引入，减少包体积。</p>\n<h2>二次封装</h2>\n<p>基于 ElTable 封装业务表格组件，统一分页、搜索、刷新逻辑。</p>"
   },
   {
@@ -356,7 +356,7 @@
     "summary": "经典 CSS 框架，栅格系统与组件库快速搭建页面。",
     "date": "2024-02-18",
     "category": "Bootstrap",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>栅格系统</h2>\n<p>container → row → col，12 列栅格灵活组合，支持 5 个断点。</p>\n<h2>工具类</h2>\n<p>间距、排版、颜色、显示隐藏等工具类减少自定义 CSS 的编写。</p>\n<h2>Bootstrap Icons</h2>\n<p>官方图标库，SVG 格式，支持缩放和颜色修改。</p>"
   },
   {
@@ -365,7 +365,7 @@
     "summary": "Node.js 最流行的 Web 框架，路由、中间件、RESTful API 开发。",
     "date": "2024-02-16",
     "category": "Express",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>中间件机制</h2>\n<p>app.use() 注册中间件，req、res、next 三参数控制请求处理流程。</p>\n<h2>路由设计</h2>\n<p>Router 类实现模块化路由，支持参数、查询字符串、RESTful 风格。</p>\n<h2>错误处理</h2>\n<p>错误处理中间件统一捕获异常，返回标准化错误响应。</p>"
   },
   {
@@ -374,7 +374,7 @@
     "summary": "洋葱模型 + async/await，更优雅的 Node.js 服务端开发。",
     "date": "2024-02-14",
     "category": "Koa",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>洋葱模型</h2>\n<p>中间件按注册顺序进入，逆序退出，形成洋葱圈的执行顺序。</p>\n<h2>上下文对象</h2>\n<p>ctx 封装了 req 和 res，提供统一的 API 操作请求和响应。</p>\n<h2>与 Express 对比</h2>\n<p>Koa 更精简，无内置中间件，async/await 原生支持避免回调地狱。</p>"
   },
   {
@@ -383,7 +383,7 @@
     "summary": "TypeScript 原生支持、依赖注入、模块化架构，Node 版 Spring。",
     "date": "2024-02-12",
     "category": "NestJS",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>模块系统</h2>\n<p>@Module 装饰器定义模块，providers、controllers、imports、exports 管理依赖。</p>\n<h2>依赖注入</h2>\n<p>@Injectable 标记可注入类，构造函数注入实现控制反转。</p>\n<h2>守卫与拦截器</h2>\n<p>Guard 控制访问权限，Interceptor 转换请求/响应，Pipe 校验参数。</p>"
   },
   {
@@ -392,7 +392,7 @@
     "summary": "阿里出品的 Node.js 企业级框架，约定优于配置。",
     "date": "2024-02-10",
     "category": "Egg.js",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>约定优于配置</h2>\n<p>app/controller、app/service、app/middleware 目录结构约定清晰。</p>\n<h2>插件机制</h2>\n<p>内置安全、日志、i18n 等插件，也可开发自定义插件复用逻辑。</p>\n<h2>多进程模型</h2>\n<p>Master-Agent-Worker 架构，充分利用多核 CPU，保证稳定性。</p>"
   },
   {
@@ -401,7 +401,7 @@
     "summary": "NoSQL 代表，文档型数据库设计与聚合查询。",
     "date": "2024-02-08",
     "category": "MongoDB",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>文档模型</h2>\n<p>BSON 格式存储，模式自由，适合快速迭代和半结构化数据。</p>\n<h2>聚合管道</h2>\n<p>$match、$group、$lookup 等阶段组成管道，实现复杂数据转换。</p>\n<h2>索引策略</h2>\n<p>单字段索引、复合索引、文本索引、地理空间索引满足不同查询需求。</p>"
   },
   {
@@ -410,7 +410,7 @@
     "summary": "最强大的开源关系型数据库，JSON、全文检索、GIS 等特性详解。",
     "date": "2024-02-06",
     "category": "PostgreSQL",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>JSON/JSONB</h2>\n<p>jsonb 存储二进制格式，支持索引和丰富的操作符，兼顾关系型和文档型。</p>\n<h2>全文检索</h2>\n<p>tsvector、tsquery、GIN 索引实现高性能全文搜索。</p>\n<h2>PostGIS 扩展</h2>\n<p>地理信息扩展，支持空间数据类型和空间索引，适合 LBS 应用。</p>"
   },
   {
@@ -419,7 +419,7 @@
     "summary": "分布式全文搜索引擎，倒排索引与分词原理详解。",
     "date": "2024-02-04",
     "category": "Elasticsearch",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>倒排索引</h2>\n<p>Term → Document 的映射结构，支持快速全文搜索。</p>\n<h2>分词器</h2>\n<p>Character Filter → Tokenizer → Token Filter 三阶段处理文本。</p>\n<h2>聚合分析</h2>\n<p>Bucket、Metric、Pipeline 聚合实现数据分析和可视化。</p>"
   },
   {
@@ -428,7 +428,7 @@
     "summary": "反向代理、负载均衡、静态资源服务，Nginx 配置全解。",
     "date": "2024-02-02",
     "category": "Nginx",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>反向代理</h2>\n<p>proxy_pass 将请求转发到后端服务，隐藏真实服务器地址。</p>\n<h2>负载均衡</h2>\n<p>upstream 模块支持轮询、IP 哈希、最少连接等策略。</p>\n<h2>静态资源优化</h2>\n<p>gzip、expires、sendfile 提升静态文件服务性能。</p>"
   },
   {
@@ -437,7 +437,7 @@
     "summary": "常用命令、Shell 脚本、Vim 操作，后端开发必备技能。",
     "date": "2024-01-30",
     "category": "Linux",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>文件与目录</h2>\n<p>ls、cd、cp、mv、rm、find、grep 是日常最高频的命令。</p>\n<h2>权限管理</h2>\n<p>chmod、chown、sudo 管理文件和用户的权限。</p>\n<h2>Shell 脚本</h2>\n<p>变量、条件判断、循环、函数构成 Shell 脚本的基础。</p>"
   },
   {
@@ -446,7 +446,7 @@
     "summary": "K8s 核心概念、Pod、Service、Deployment，容器编排实战。",
     "date": "2024-01-28",
     "category": "Kubernetes",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>核心架构</h2>\n<p>Master 节点管理集群，Node 节点运行容器，API Server 是中枢。</p>\n<h2>Pod 与控制器</h2>\n<p>Pod 是最小调度单元，Deployment 管理无状态应用，StatefulSet 管理有状态应用。</p>\n<h2>Service 网络</h2>\n<p>ClusterIP、NodePort、LoadBalancer 暴露服务，DNS 实现服务发现。</p>"
   },
   {
@@ -455,7 +455,7 @@
     "summary": "Jenkins + GitHub Actions，自动化构建测试与部署流水线。",
     "date": "2024-01-26",
     "category": "CICD",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>流水线设计</h2>\n<p>代码检出 → 依赖安装 → 构建 → 测试 → 部署，自动化整个发布流程。</p>\n<h2>GitHub Actions</h2>\n<p>Workflow、Job、Step、Action 构成自动化流程，YAML 文件定义。</p>\n<h2>Jenkins Pipeline</h2>\n<p>Jenkinsfile 定义 Declarative Pipeline，Groovy 语法灵活控制流程。</p>"
   },
   {
@@ -464,7 +464,7 @@
     "summary": "服务拆分、服务治理、分布式事务，微服务设计原则与实践。",
     "date": "2024-01-24",
     "category": "微服务",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>服务拆分原则</h2>\n<p>单一职责、高内聚低耦合、按业务能力拆分，避免分布式单体。</p>\n<h2>服务通信</h2>\n<p>同步用 REST/gRPC，异步用消息队列，根据场景选择。</p>\n<h2>分布式事务</h2>\n<p>2PC、TCC、Saga、本地消息表等方案各有适用场景。</p>"
   },
   {
@@ -473,7 +473,7 @@
     "summary": "高吞吐量分布式消息系统，主题、分区、消费者组详解。",
     "date": "2024-01-22",
     "category": "Kafka",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>核心概念</h2>\n<p>Topic 逻辑分类，Partition 物理分片，Consumer Group 实现广播和单播。</p>\n<h2>分区策略</h2>\n<p>轮询、Key Hash、自定义分区器决定消息写入哪个分区。</p>\n<h2>消费者偏移量</h2>\n<p>offset 记录消费进度，自动提交和手动提交各有优劣。</p>"
   },
   {
@@ -482,7 +482,7 @@
     "summary": "AMQP 协议、交换机、队列，可靠消息投递实现。",
     "date": "2024-01-20",
     "category": "RabbitMQ",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>交换机类型</h2>\n<p>Direct 精确匹配、Fanout 广播、Topic 模式匹配、Headers 头匹配。</p>\n<h2>消息确认</h2>\n<p>生产者确认、消费者 ACK、持久化确保消息不丢失。</p>\n<h2>死信队列</h2>\n<p>消息被拒绝、过期、队列满时进入死信队列，用于延迟队列和异常处理。</p>"
   },
   {
@@ -491,7 +491,7 @@
     "summary": "23 种经典设计模式，结合前端场景深入理解与应用。",
     "date": "2024-01-18",
     "category": "设计模式",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>创建型模式</h2>\n<p>单例、工厂、建造者模式管理对象创建，降低耦合。</p>\n<h2>结构型模式</h2>\n<p>适配器、装饰器、代理、外观模式处理对象组合和接口适配。</p>\n<h2>行为型模式</h2>\n<p>观察者、策略、状态、命令模式处理对象间的通信和职责分配。</p>"
   },
   {
@@ -500,7 +500,7 @@
     "summary": "数组、链表、树、图、排序、查找，面试必备算法基础。",
     "date": "2024-01-16",
     "category": "数据结构",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>线性结构</h2>\n<p>数组随机访问 O(1)，链表插入删除 O(1)，栈和队列是受限线性表。</p>\n<h2>树与图</h2>\n<p>二叉树、二叉搜索树、AVL、红黑树、堆、B 树各有适用场景。</p>\n<h2>排序算法</h2>\n<p>快排、归并、堆排是 O(n log n) 级别，冒泡、插入、选择是 O(n²)。</p>"
   },
   {
@@ -509,7 +509,7 @@
     "summary": "从入门到精通，掌握正则表达式的语法与常见应用场景。",
     "date": "2024-01-14",
     "category": "正则表达式",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>元字符</h2>\n<p>.、\\d、\\w、\\s 匹配单字符，^、$ 锚定位置。</p>\n<h2>量词与分组</h2>\n<p>*、+、?、{} 控制重复次数，() 分组和捕获。</p>\n<h2>贪婪与懒惰</h2>\n<p>默认贪婪匹配，加 ? 变为懒惰匹配，避免过度匹配。</p>"
   },
   {
@@ -518,7 +518,7 @@
     "summary": "JWT 结构、签发与验证流程，无状态认证方案详解。",
     "date": "2024-01-12",
     "category": "JWT",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>JWT 结构</h2>\n<p>Header.Payload.Signature 三部分组成，Base64 编码，签名保证完整性。</p>\n<h2>签发与验证</h2>\n<p>服务端用密钥签名，客户端携带 Token，服务端验证签名和过期时间。</p>\n<h2>刷新 Token</h2>\n<p>短有效期 Access Token + 长有效期 Refresh Token 平衡安全与体验。</p>"
   },
   {
@@ -527,7 +527,7 @@
     "summary": "第三方登录原理，授权码模式、隐式模式、客户端凭证模式详解。",
     "date": "2024-01-10",
     "category": "OAuth",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>四种授权模式</h2>\n<p>授权码模式最安全，隐式模式用于 SPA，密码模式已不推荐，客户端凭证用于服务间。</p>\n<h2>授权码流程</h2>\n<p>用户跳转授权页 → 同意授权 → 回调获取 code → 用 code 换 token。</p>\n<h2>PKCE 扩展</h2>\n<p>Proof Key for Code Exchange 防止授权码拦截攻击，移动端必备。</p>"
   },
   {
@@ -536,7 +536,7 @@
     "summary": "XSS、CSRF、SQL 注入、点击劫持，常见攻击与防御手段。",
     "date": "2024-01-08",
     "category": "Web安全",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>XSS 跨站脚本</h2>\n<p>存储型、反射型、DOM 型 XSS，防御手段：输入过滤、输出编码、CSP。</p>\n<h2>CSRF 跨站请求伪造</h2>\n<p>SameSite Cookie、CSRF Token、Referer 校验防止跨站请求。</p>\n<h2>SQL 注入</h2>\n<p>预编译语句、ORM、输入验证防止 SQL 注入攻击。</p>"
   },
   {
@@ -545,7 +545,7 @@
     "summary": "编译时框架，零虚拟 DOM，更轻量的前端开发体验。",
     "date": "2024-01-06",
     "category": "Svelte",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>编译时框架</h2>\n<p>Svelte 在构建时将组件编译为高效的原生 JS，运行时无需框架代码。</p>\n<h2>响应式声明</h2>\n<p>$: 语法自动追踪依赖，变量变化时更新相关 DOM。</p>\n<h2>Store 状态</h2>\n<p>writable、readable、derived store 管理跨组件状态。</p>"
   },
   {
@@ -554,7 +554,7 @@
     "summary": "细粒度响应式 + JSX，性能接近原生的前端框架。",
     "date": "2024-01-04",
     "category": "Solid.js",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>细粒度更新</h2>\n<p>Signal 变化时只更新依赖它的 DOM 节点，无虚拟 DOM diff 开销。</p>\n<h2>JSX 编译</h2>\n<p>JSX 被编译为直接的 DOM 操作，无运行时 JSX 解释器。</p>\n<h2>与 React 对比</h2>\n<p>API 类似 React，但无 hooks 闭包陷阱，无重新渲染问题。</p>"
   },
   {
@@ -563,7 +563,7 @@
     "summary": "TypeScript 全功能框架，依赖注入、路由、表单全面解析。",
     "date": "2024-01-02",
     "category": "Angular",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>组件与模板</h2>\n<p>组件 = 类 + 模板 + 样式，模板语法支持数据绑定、指令、管道。</p>\n<h2>依赖注入</h2>\n<p>Injector 树提供层级化依赖注入，服务可跨组件共享。</p>\n<h2>路由守卫</h2>\n<p>CanActivate、CanDeactivate、Resolve 控制路由的进入和离开。</p>"
   },
   {
@@ -572,7 +572,7 @@
     "summary": "React 生态的 SSR/SSG 全栈框架，服务端渲染与静态生成。",
     "date": "2023-12-30",
     "category": "Next.js",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>渲染模式</h2>\n<p>SSR、SSG、ISR 三种渲染模式适应不同场景，ISR 增量静态再生兼顾性能和实时性。</p>\n<h2>App Router</h2>\n<p>基于 React Server Components，支持服务端组件、流式渲染、并行路由。</p>\n<h2>API Routes</h2>\n<p>route.ts 文件定义 API 端点，支持 GET、POST 等方法。</p>"
   },
   {
@@ -581,7 +581,7 @@
     "summary": "Vue 生态的 SSR 框架，自动路由与服务端渲染。",
     "date": "2023-12-28",
     "category": "Nuxt.js",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>自动路由</h2>\n<p>pages/ 目录下的文件自动生成路由配置，动态路由用方括号语法。</p>\n<h2>数据获取</h2>\n<p>useAsyncData、useFetch 在服务端获取数据，SEO 友好。</p>\n<h2>模块系统</h2>\n<p>Nuxt Modules 扩展框架能力，官方和社区模块丰富。</p>"
   },
   {
@@ -590,7 +590,7 @@
     "summary": "基于 Web 标准的现代全栈框架，嵌套路由与数据加载机制。",
     "date": "2023-12-26",
     "category": "Remix",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>嵌套路由</h2>\n<p>URL 各段对应不同组件，并行加载数据，独立错误边界。</p>\n<h2>数据加载</h2>\n<p>loader 在服务端加载数据，action 处理表单提交，天然支持渐进增强。</p>\n<h2>Web 标准优先</h2>\n<p>基于 Fetch API、Request/Response、Web Streams 等标准 API。</p>"
   },
   {
@@ -599,7 +599,7 @@
     "summary": "岛屿架构 + 多框架支持，构建极致性能的静态网站。",
     "date": "2023-12-24",
     "category": "Astro",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>岛屿架构</h2>\n<p>默认零 JS，交互组件作为“岛屿”单独 hydrate，大幅减少 JS 负载。</p>\n<h2>多框架支持</h2>\n<p>同一个页面可以混用 React、Vue、Svelte、Solid 组件。</p>\n<h2>内容集合</h2>\n<p>Content Collections 管理 Markdown/MDX 内容，类型安全。</p>"
   },
   {
@@ -608,7 +608,7 @@
     "summary": "用 Web 技术构建跨平台桌面应用，主进程与渲染进程通信。",
     "date": "2023-12-22",
     "category": "Electron",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>进程模型</h2>\n<p>主进程管理窗口和应用生命周期，渲染进程运行网页内容。</p>\n<h2>进程通信</h2>\n<p>IPC 主从通信，ipcMain 和 ipcRenderer 传递消息。</p>\n<h2>打包发布</h2>\n<p>electron-builder 或 electron-forge 打包跨平台安装包。</p>"
   },
   {
@@ -617,7 +617,7 @@
     "summary": "Rust + WebView，比 Electron 更轻量的桌面应用方案。",
     "date": "2023-12-20",
     "category": "Tauri",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>架构对比</h2>\n<p>Tauri 用系统 WebView 渲染，Rust 后端，安装包比 Electron 小一个数量级。</p>\n<h2>前端集成</h2>\n<p>任何前端框架都可以集成，@tauri-apps/api 提供系统能力访问。</p>\n<h2>安全模型</h2>\n<p>白名单机制控制前端可调用的系统 API，减少攻击面。</p>"
   },
   {
@@ -626,7 +626,7 @@
     "summary": "用 React 构建原生移动应用，跨平台 iOS/Android 开发。",
     "date": "2023-12-18",
     "category": "ReactNative",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>原生组件</h2>\n<p>React Native 组件映射到原生 UI 组件，非 WebView 渲染。</p>\n<h2>桥接机制</h2>\n<p>JS 线程和原生线程通过 Bridge 异步通信，新架构用 JSI 同步调用。</p>\n<h2>导航方案</h2>\n<p>React Navigation 是社区标准，支持栈、标签、抽屉等导航模式。</p>"
   },
   {
@@ -635,7 +635,7 @@
     "summary": "一套代码多端发布，支持小程序、H5、App 的跨平台框架。",
     "date": "2023-12-16",
     "category": "uni-app",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>跨端原理</h2>\n<p>Vue 语法 + 条件编译，编译到各平台原生代码或 WebView。</p>\n<h2>条件编译</h2>\n<p>#ifdef #endif 按平台差异化编写代码，兼顾通用和特有能力。</p>\n<h2>插件生态</h2>\n<p>uni_modules 插件市场覆盖大部分常见需求。</p>"
   },
   {
@@ -644,7 +644,7 @@
     "summary": "京东出品的多端统一开发框架，支持 React/Vue 语法。",
     "date": "2023-12-14",
     "category": "Taro",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>多端编译</h2>\n<p>一套代码编译到微信/支付宝/百度/抖音小程序、H5、React Native。</p>\n<h2>组件规范</h2>\n<p>基于小程序组件规范，Taro UI 提供跨端一致的组件库。</p>\n<h2>插件系统</h2>\n<p>Taro 插件扩展编译流程，支持自定义转换规则。</p>"
   },
   {
@@ -653,7 +653,7 @@
     "summary": "Vue 生态的组合式工具集，上百个实用的 Composable 函数。",
     "date": "2023-12-12",
     "category": "VueUse",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>分类概览</h2>\n<p>Animation、Browser、Sensors、State、Elements、Component 等类别。</p>\n<h2>常用工具</h2>\n<p>useLocalStorage、useDebounceFn、useIntersectionObserver、useVModel 等。</p>\n<h2>自定义 Composable</h2>\n<p>参考 VueUse 源码风格，封装自己的组合式函数。</p>"
   },
   {
@@ -662,7 +662,7 @@
     "summary": "JavaScript 实用工具库，数组、对象、字符串处理函数大全。",
     "date": "2023-12-10",
     "category": "Lodash",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>数组方法</h2>\n<p>chunk、flatten、uniq、intersection 等处理数组的常用方法。</p>\n<h2>函数方法</h2>\n<p>debounce、throttle、curry、memoize 优化函数执行。</p>\n<h2>链式调用</h2>\n<p>_.chain() 开启惰性求值链，减少中间数组创建。</p>"
   },
   {
@@ -671,7 +671,7 @@
     "summary": "轻量级 Moment.js 替代品，日期格式化与计算的最佳选择。",
     "date": "2023-12-08",
     "category": "Day.js",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>API 设计</h2>\n<p>不可变对象，链式调用，API 与 Moment.js 高度兼容。</p>\n<h2>插件系统</h2>\n<p>相对时间、日历时间、时区、农历等插件按需引入。</p>\n<h2>国际化</h2>\n<p>内置多语言包，locale() 方法切换语言。</p>"
   },
   {
@@ -680,7 +680,7 @@
     "summary": "百度出品的图表库，折线图、柱状图、饼图、地图全面解析。",
     "date": "2023-12-06",
     "category": "ECharts",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>配置驱动</h2>\n<p>setOption 传入配置对象，声明式定义图表外观和数据。</p>\n<h2>数据集</h2>\n<p>dataset 组件统一管理数据，实现数据到视觉的映射。</p>\n<h2>交互能力</h2>\n<p>tooltip、legend、dataZoom、brush 提供丰富的交互体验。</p>"
   },
   {
@@ -689,7 +689,7 @@
     "summary": "最强大的数据可视化库，基于数据操作 DOM 的底层能力。",
     "date": "2023-12-04",
     "category": "D3.js",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>数据绑定</h2>\n<p>enter-update-exit 模式将数据绑定到 DOM 元素，精确控制增删改。</p>\n<h2>比例尺</h2>\n<p>scaleLinear、scaleBand、scaleTime 等将抽象数据映射到视觉属性。</p>\n<h2>力导向图</h2>\n<p>d3-force 模拟物理系统，实现节点间引力和斥力的布局。</p>"
   },
   {
@@ -698,7 +698,7 @@
     "summary": "React 生态最优雅的动画库，声明式动画与手势交互。",
     "date": "2023-12-02",
     "category": "FramerMotion",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>声明式动画</h2>\n<p>motion 组件 + animate prop 定义动画，自动处理过渡。</p>\n<h2>手势支持</h2>\n<p>拖拽、悬停、点击、平移等手势开箱即用。</p>\n<h2>布局动画</h2>\n<p>layout prop 自动检测位置变化并添加过渡动画。</p>"
   },
   {
@@ -707,7 +707,7 @@
     "summary": "高性能 JavaScript 动画库，时间线、缓动、滚动动画全掌握。",
     "date": "2023-11-30",
     "category": "GSAP",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Tween 补间</h2>\n<p>gsap.to()、from()、fromTo() 创建补间动画，控制属性变化。</p>\n<h2>Timeline 时间线</h2>\n<p>timeline 编排多个动画的时序关系，支持重叠、偏移、循环。</p>\n<h2>ScrollTrigger</h2>\n<p>基于滚动位置的动画触发，实现视差滚动和滚动叙事。</p>"
   },
   {
@@ -716,7 +716,7 @@
     "summary": "Observable + 操作符，用响应式思维处理异步事件流。",
     "date": "2023-11-28",
     "category": "RxJS",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Observable 流</h2>\n<p>Observable 是可取消的、惰性求值的异步数据流。</p>\n<h2>操作符</h2>\n<p>map、filter、debounceTime、switchMap 等操作符组合和变换流。</p>\n<h2>Subject</h2>\n<p>既是 Observable 又是 Observer，实现多播和事件总线。</p>"
   },
   {
@@ -725,7 +725,7 @@
     "summary": "极简 React 状态管理库，不到 1KB 的轻量级方案。",
     "date": "2023-11-26",
     "category": "Zustand",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Store 创建</h2>\n<p>create() 函数定义 store，set 更新状态，get 读取状态。</p>\n<h2>选择器</h2>\n<p>useStore(state => state.count) 精确订阅，避免不必要的重渲染。</p>\n<h2>中间件</h2>\n<p>persist 持久化、devtools 调试、immer 不可变更新。</p>"
   },
   {
@@ -734,7 +734,7 @@
     "summary": "原子化的 React 状态管理，类似 Recoil 的轻量替代方案。",
     "date": "2023-11-24",
     "category": "Jotai",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>原子模型</h2>\n<p>atom() 创建原子，每个原子独立订阅，组合原子派生状态。</p>\n<h2>派生原子</h2>\n<p>read 函数依赖其他原子，自动追踪依赖变化。</p>\n<h2>异步原子</h2>\n<p>async read 函数让原子直接处理异步数据。</p>"
   },
   {
@@ -743,7 +743,7 @@
     "summary": "React 表单管理利器，表单状态、验证、提交一体化。",
     "date": "2023-11-22",
     "category": "Formik",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>核心组件</h2>\n<p>Formik 组件管理表单状态，Field 绑定字段，ErrorMessage 显示错误。</p>\n<h2>验证方式</h2>\n<p>validate 函数或 Yup Schema 定义验证规则。</p>\n<h2>与 UI 库集成</h2>\n<p>useField hook 将 Formik 与 Ant Design、Material UI 等组件库集成。</p>"
   },
   {
@@ -752,7 +752,7 @@
     "summary": "高性能、无受控组件的 React 表单库，极致开发体验。",
     "date": "2023-11-20",
     "category": "ReactHookForm",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>受控 vs 非受控</h2>\n<p>RHF 基于非受控组件，register 注册字段，性能更好。</p>\n<h2>Resolver 验证</h2>\n<p>支持 Zod、Yup、Joi 等 Schema 验证库。</p>\n<h2>Watch 与 Controller</h2>\n<p>watch 监听字段变化，Controller 包装受控组件。</p>"
   },
   {
@@ -761,7 +761,7 @@
     "summary": "TypeScript 优先的 Schema 验证库，运行时类型安全保障。",
     "date": "2023-11-18",
     "category": "Zod",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Schema 定义</h2>\n<p>z.string()、z.number()、z.object() 链式定义数据结构。</p>\n<h2>类型推断</h2>\n<p>z.infer 从 Schema 提取 TypeScript 类型。</p>\n<h2>错误处理</h2>\n<p>parse 抛异常，safeParse 返回结果对象，format() 格式化错误信息。</p>"
   },
   {
@@ -770,7 +770,7 @@
     "summary": "下一代 Node.js 和 TypeScript ORM，类型安全的数据库访问。",
     "date": "2023-11-16",
     "category": "Prisma",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Schema 文件</h2>\n<p>schema.prisma 定义数据源、生成器和数据模型。</p>\n<h2>迁移与客户端</h2>\n<p>prisma migrate 管理数据库迁移，Prisma Client 提供类型安全的查询 API。</p>\n<h2>关系查询</h2>\n<p>include、select 预加载关联数据，避免 N+1 查询。</p>"
   },
   {
@@ -779,7 +779,7 @@
     "summary": "Node.js 生态老牌 ORM，多数据库支持与关联查询。",
     "date": "2023-11-14",
     "category": "Sequelize",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>模型定义</h2>\n<p>define() 定义模型，字段类型、约束、默认值配置。</p>\n<h2>关联查询</h2>\n<p>hasOne、belongsTo、hasMany、belongsToMany 定义表关系。</p>\n<h2>事务管理</h2>\n<p>transaction() 包裹操作，保证数据一致性。</p>"
   },
   {
@@ -788,7 +788,7 @@
     "summary": "TypeScript 原生 ORM，支持 Active Record 和 Data Mapper 模式。",
     "date": "2023-11-12",
     "category": "TypeORM",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>实体定义</h2>\n<p>@Entity 装饰器标记实体类，@Column 定义字段。</p>\n<h2>Repository 模式</h2>\n<p>Data Mapper 模式通过 Repository 操作实体，解耦业务逻辑和数据访问。</p>\n<h2>迁移与订阅</h2>\n<p>CLI 生成迁移文件，@EventSubscriber 监听实体生命周期事件。</p>"
   },
   {
@@ -797,7 +797,7 @@
     "summary": "开源 Firebase 替代，PostgreSQL + Auth + Storage 一体化。",
     "date": "2023-11-10",
     "category": "Supabase",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>数据库</h2>\n<p>托管 PostgreSQL，自动生成 REST 和 GraphQL API。</p>\n<h2>认证</h2>\n<p>邮箱密码、OAuth 社交登录、Magic Link 多种认证方式。</p>\n<h2>实时订阅</h2>\n<p>Supabase Realtime 监听数据库变更，实时推送。</p>"
   },
   {
@@ -806,7 +806,7 @@
     "summary": "Google 出品的 BaaS 平台，认证、数据库、托管、云函数。",
     "date": "2023-11-08",
     "category": "Firebase",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Firestore</h2>\n<p>NoSQL 文档数据库，实时同步，离线持久化。</p>\n<h2>Cloud Functions</h2>\n<p>无服务器函数响应事件触发，扩展后端能力。</p>\n<h2>Hosting</h2>\n<p>全球 CDN 托管静态资源，自定义域名和 SSL。</p>"
   },
   {
@@ -815,7 +815,7 @@
     "summary": "前端开发者最喜欢的部署平台，全球 CDN + 自动部署。",
     "date": "2023-11-06",
     "category": "Vercel",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>零配置部署</h2>\n<p>连接 Git 仓库，自动检测框架并部署。</p>\n<h2>Serverless Functions</h2>\n<p>api/ 目录下的文件自动部署为 Serverless 函数。</p>\n<h2>Edge Network</h2>\n<p>全球边缘节点，静态资源和函数就近执行。</p>"
   },
   {
@@ -824,7 +824,7 @@
     "summary": "静态网站部署与 Serverless Functions，JAMstack 架构首选。",
     "date": "2023-11-04",
     "category": "Netlify",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>持续部署</h2>\n<p>Git Push 触发构建和部署，预览部署支持分支。</p>\n<h2>表单处理</h2>\n<p>netlify 属性标记表单，无需后端即可收集提交。</p>\n<h2>Edge Functions</h2>\n<p>Deno 运行时边缘函数，低延迟个性化响应。</p>"
   },
   {
@@ -833,7 +833,7 @@
     "summary": "在全球边缘节点运行 JavaScript，极致低延迟的 Serverless。",
     "date": "2023-11-02",
     "category": "Cloudflare",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Workers 运行时</h2>\n<p>V8 隔离环境，毫秒级冷启动，无传统 Serverless 的冷启动延迟。</p>\n<h2>KV 存储</h2>\n<p>最终一致性的全球 KV 存储，适合配置和缓存数据。</p>\n<h2>Durable Objects</h2>\n<p>强一致性的有状态计算，单例模式处理协调逻辑。</p>"
   },
   {
@@ -842,7 +842,7 @@
     "summary": "Node.js 作者的新项目，默认安全、原生 TS、内置工具链。",
     "date": "2023-10-30",
     "category": "Deno",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>安全模型</h2>\n<p>默认无文件、网络、环境变量访问权限，需显式授权。</p>\n<h2>原生 TypeScript</h2>\n<p>内置 TS 编译器，直接运行 .ts 文件无需配置。</p>\n<h2>标准库</h2>\n<p>经过审计的标准库，覆盖 HTTP、加密、文本处理等常用功能。</p>"
   },
   {
@@ -851,7 +851,7 @@
     "summary": "Zig 编写的 JavaScript 运行时，打包、测试、运行全能选手。",
     "date": "2023-10-28",
     "category": "Bun",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>性能优势</h2>\n<p>JavaScriptCore 引擎 + Zig 语言，启动速度和执行速度远超 Node。</p>\n<h2>内置工具链</h2>\n<p>bun install、bun run、bun test、bun build 一体化工具链。</p>\n<h2>兼容性</h2>\n<p>兼容 Node.js 的 API 和 npm 生态，迁移成本低。</p>"
   },
   {
@@ -860,7 +860,7 @@
     "summary": "可插拔的 JavaScript 代码检查工具，团队代码质量保障。",
     "date": "2023-10-26",
     "category": "ESLint",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>配置方式</h2>\n<p>eslint.config.js 或 .eslintrc，extends 继承共享配置。</p>\n<h2>自定义规则</h2>\n<p>rules 覆盖继承的规则，支持 warn、error、off 级别。</p>\n<h2>插件生态</h2>\n<p>eslint-plugin-react、@typescript-eslint 等扩展框架支持。</p>"
   },
   {
@@ -869,7 +869,7 @@
     "summary": "固执己见的代码格式化工具，让团队不再纠结代码风格。",
     "date": "2023-10-24",
     "category": "Prettier",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>核心理念</h2>\n<p>不提供配置选项争论，只提供一种风格，减少团队内耗。</p>\n<h2>集成方式</h2>\n<p>编辑器保存时自动格式化，配合 ESLint 使用。</p>\n<h2>忽略文件</h2>\n<p>.prettierignore 排除不需要格式化的文件。</p>"
   },
   {
@@ -878,7 +878,7 @@
     "summary": "Git 钩子管理工具，提交前自动 lint、格式化、跑测试。",
     "date": "2023-10-22",
     "category": "Husky",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>钩子配置</h2>\n<p>pre-commit、commit-msg、pre-push 等钩子拦截 Git 操作。</p>\n<h2>配合 lint-staged</h2>\n<p>只对暂存区文件执行 lint 和格式化，提升速度。</p>\n<h2>Commitlint</h2>\n<p>commit-msg 钩子校验提交信息格式，规范提交历史。</p>"
   },
   {
@@ -887,7 +887,7 @@
     "summary": "UI 组件开发与文档工具，隔离开发 + 可视化展示。",
     "date": "2023-10-20",
     "category": "Storybook",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>Story 定义</h2>\n<p>CSF 格式定义组件的每种状态，args 控制 props。</p>\n<h2>插件系统</h2>\n<p>Controls 实时调节参数，Actions 捕获事件，Docs 自动生成文档。</p>\n<h2>测试集成</h2>\n<p>Storybook 可集成 Jest、Testing Library 做组件测试。</p>"
   },
   {
@@ -896,7 +896,7 @@
     "summary": "基于 Vite 的极速测试框架，原生 ESM、TypeScript、HMR 支持。",
     "date": "2023-10-18",
     "category": "Vitest",
-    "cover": "./images/测试图片.png",
+    "cover": "/images/测试图片.png",
     "content": "<h2>与 Vite 集成</h2>\n<p>共享 Vite 配置、插件和转换器，无需额外配置。</p>\n<h2>Jest 兼容</h2>\n<p>API 与 Jest 高度兼容，迁移成本低。</p>\n<h2>测试 UI</h2>\n<p>vitest --ui 提供可视化测试界面，实时查看结果。</p>"
   }
 ]
