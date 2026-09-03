@@ -10,7 +10,12 @@ const routes = [
   {
     path: '/post/:id',
     name: 'post',
-    component: () => import('@/views/PostView.vue'),
+    component: () => import('@/views/postView.vue'),
+  },
+  {
+    path: '/favorites',
+    name: 'favorites',
+    component: () => import('@/views/favoriteView.vue'),
   },
 ]
 

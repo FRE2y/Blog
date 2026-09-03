@@ -1,4 +1,5 @@
 import { computed, onMounted, ref } from 'vue'
+import { useFavoriteStore } from '@/Stores/useFavoriteStore'
 export function usePosts() {
   //文章载入
   const articles = ref([])
@@ -57,6 +58,12 @@ export function usePosts() {
   function handleUpdate(cat) {
     activeCategory.value = cat
   }
+
+  const Store = useFavoriteStore()
+  const favoritePosts = computed(() => {
+    return articles.value.filter((a) => Store.favoriteIds.includes(a.id))
+  })
+
   return {
     articles,
     isLoading,
@@ -67,5 +74,6 @@ export function usePosts() {
     filteredArticles,
     handleUpdate,
     fetchPosts,
+    favoritePosts,
   }
 }

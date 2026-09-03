@@ -13,6 +13,7 @@ const {
   handleUpdate,
   fetchPosts,
   articles,
+  favoritePosts,
 } = usePosts()
 
 console.log()
@@ -20,39 +21,17 @@ console.log()
 
 <template>
   <div class="home">
-    <h2 v-if="articles.length" class="section-title">全部</h2>
-
-    <!-- 搜索框 -->
-    <div class="search-bar">
-      <input
-        v-model="keyword"
-        type="text"
-        placeholder="搜索文章标题或摘要..."
-        class="search-input"
-      />
-      <span v-if="keyword" class="clear-btn" @click="keyword = ''">×</span>
-    </div>
-    <!-- 标签分类筛选 -->
-    <CategoryFilter
-      :categories="categories"
-      :active-category="activeCategory"
-      :length="filteredArticles.length"
-      @update-category="handleUpdate"
-    ></CategoryFilter>
+    <h2 v-if="articles.length" class="section-title">收藏</h2>
 
     <!-- 加载中 -->
-    <p v-if="isLoading" class="status-msg">加载中，请稍后...</p>
-    <p v-else-if="error" class="error">
-      加载失败：{{ error }}
-      <button @click="fetchPosts">重试</button>
-    </p>
-    <p v-else-if="!articles.length" class="empty-tip">还没有文章，敬请期待。</p>
+
+    <p v-if="!favoritePosts.length" class="empty-tip">还没有收藏文章。</p>
 
     <!-- 文章列表 -->
     <div v-else class="article-grid">
       <!-- 文章卡片 -->
       <BlogCard
-        v-for="article in filteredArticles"
+        v-for="article in favoritePosts"
         :key="article.id"
         :category="article.category"
         :title="article.title"

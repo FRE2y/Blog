@@ -1,10 +1,11 @@
 <script setup>
 import { RouterLink, useRoute } from 'vue-router'
-
 import { computed, ref, onMounted } from 'vue'
 import { usePosts } from '@/composables/usePosts'
+import { useFavoriteStore } from '@/Stores/useFavoriteStore'
 const route = useRoute()
 const id = Number(route.params.id)
+
 const { fetchPosts, articles, isLoading, error } = usePosts()
 onMounted(() => {
   fetchPosts()
@@ -13,6 +14,12 @@ onMounted(() => {
 const article = computed(() => {
   return articles.value.find((a) => a.id === id)
 })
+// 收藏功能
+const favoriteStore = useFavoriteStore()
+function handleFavorite(e) {
+  e.preventDefault()
+  favoriteStore.toggleFavorite(id)
+}
 </script>
 
 <template>
@@ -26,14 +33,24 @@ const article = computed(() => {
     </div>
     <article v-else>
       <span class="category-tag">{{ article.category }}</span>
-      <h1>{{ article.title }}</h1>
+
+      <div class="post-header">
+        <h1>{{ article.title }}</h1>
+        <button class="fav-btn" @click="handleFavorite">
+          {{ favoriteStore.isFavorite(id) ? '❤已收藏' : '♡收藏' }}
+        </button>
+      </div>
       <time>{{ article.date }}</time>
+
       <div class="content" v-html="article.content"></div>
       <RouterLink to="/" class="back-link">⬅返回首页</RouterLink>
     </article>
   </div>
 </template>
 <style scoped>
+.info {
+  display: flex;
+}
 .bg {
   width: 100%;
   height: 100%;
@@ -84,5 +101,22 @@ time {
 .not-found {
   text-align: center;
   padding: 60px 0;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 10px; */
+}
+.fav-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: red;
+  padding: 4px 8px;
+}
+.fav-btn:hover {
+  transform: scale(1.2);
 }
 </style>

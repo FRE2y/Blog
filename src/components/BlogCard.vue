@@ -1,4 +1,5 @@
 <script setup>
+import { useFavoriteStore } from '@/Stores/useFavoriteStore'
 const props = defineProps({
   title: String, //文章标题
   category: String, //分类标签
@@ -7,6 +8,11 @@ const props = defineProps({
   cover: String, //封面图片
   articleId: Number,
 })
+const favoriteStore = useFavoriteStore()
+function handleFavorite(e) {
+  e.preventDefault()
+  favoriteStore.toggleFavorite(props.articleId)
+}
 </script>
 
 <template>
@@ -17,7 +23,12 @@ const props = defineProps({
         <span class="card-category">{{ category }}</span>
         <h3 class="card-title">{{ title }}</h3>
         <p class="card-summary">{{ summary }}</p>
-        <span class="card-date">{{ date }}</span>
+        <div class="card-footer">
+          <span class="card-date">{{ date }}</span>
+          <button class="fav-btn" @click="handleFavorite">
+            {{ favoriteStore.isFavorite(articleId) ? '❤' : '♡' }}
+          </button>
+        </div>
       </div>
     </div>
   </RouterLink>
@@ -78,5 +89,22 @@ const props = defineProps({
 .card-date {
   font-size: 12px;
   color: var(--text-tertiary);
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.fav-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+  padding: 4px 8px;
+}
+.fav-btn:hover {
+  transform: scale(1.2);
 }
 </style>

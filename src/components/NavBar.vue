@@ -2,6 +2,8 @@
 import { RouterLink } from 'vue-router'
 import { useDarkMode } from '@/composables/useDarkMode'
 const { isDark, toggleDark } = useDarkMode()
+import { useFavoriteStore } from '@/Stores/useFavoriteStore'
+const favoriteStore = useFavoriteStore()
 </script>
 
 <template>
@@ -9,7 +11,8 @@ const { isDark, toggleDark } = useDarkMode()
     <h1>yyy</h1>
     <nav>
       <RouterLink to="/">主页</RouterLink>
-      <RouterLink to="/post/1">最新文章</RouterLink>
+      <RouterLink to="/favorites"> 收藏</RouterLink>
+
       <button class="theme-btn" @click="toggleDark">{{ isDark ? '☀亮色' : '🌙黑暗' }}</button>
     </nav>
   </header>
@@ -33,17 +36,30 @@ const { isDark, toggleDark } = useDarkMode()
   color: var(--text-accent);
 }
 .navbar a {
+  font-size: 15px;
   margin-left: 20px;
   text-decoration: none;
   color: var(--text-primary);
 }
+.fav {
+  /* margin-left: 20px; */
+  font-size: 15px;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+.fav:hover {
+  color: rgb(0, 162, 255);
+}
 .theme-btn {
-  background: var(--bg-navbar);
+  font-size: 15px;
+  background: none;
   margin-left: 20px;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   color: var(--text-primary);
-  transition: background 0.3s ease;
+}
+.theme-btn:hover {
+  color: rgb(0, 162, 255);
 }
 </style>
