@@ -74,7 +74,7 @@ console.log()
 .section-title {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--text-primary);
 }
 .article-grid {
   display: grid;
@@ -104,12 +104,19 @@ console.log()
 .search-input {
   width: 100%;
   padding: 12px 40px 12px 16px;
-  border: 2px solid #77ccfd;
+  border: 2px solid;
   border-radius: 12px;
   outline: none;
+  background: var(--bg-input);
+  border-color: var(--border-input);
+  color: var(--text-primary);
 }
 .search-input:focus {
-  border-color: rgb(47, 135, 175);
+  border-color: var(--border-input-focus);
+  outline: none;
+}
+.search-input::placeholder {
+  color: var(--text-tertiary);
 }
 .clear-btn {
   position: absolute;
@@ -119,5 +126,9 @@ console.log()
   cursor: pointer;
   color: #838282;
   font-size: 20px;
+}
+
+.empty-tip {
+  color: var(--text-tertiary);
 }
 </style>

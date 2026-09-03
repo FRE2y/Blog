@@ -41,12 +41,15 @@ function selectCategory(category) {
 }
 .category-bar button {
   padding: 6px 16px;
-  border: 1px solid #ddd;
+  border: 1px solid;
   border-radius: 20px;
-  background: #fff;
+
   cursor: pointer;
   font-size: 14px;
   transition: all 0.2s;
+  border-color: var(--border-button);
+  background: var(--bg-button);
+  color: var(--text-button);
 }
 .category-bar button.active {
   background: #85baff;
@@ -54,13 +57,13 @@ function selectCategory(category) {
   border-color: #85baff;
 }
 .category-bar button:hover {
-  background: #85baff;
-  color: #fff;
-  border-color: #85baff;
+  background: var(--bg-button-hover);
+  color: var(--text-button-hover);
+  border-color: var(--bg-button-hover);
 }
 
 .res-info {
-  color: #999;
+  color: var(--text-tertiary);
   font-size: 14px;
   margin-bottom: 16px;
 }

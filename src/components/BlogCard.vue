@@ -28,20 +28,23 @@ const props = defineProps({
   color: inherit;
   display: block;
 }
+
 .article-card {
-  background: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition:
-    box-shadow 0.2s,
-    translateY 0.2s;
   cursor: pointer;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-card);
+  transition:
+    background 0.3s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 .article-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-card-hover);
 }
+
 .card-cover {
   width: 100%;
   height: 180px;
@@ -53,25 +56,27 @@ const props = defineProps({
 .card-category {
   display: inline-block;
   padding: 2px 10px;
-  background: #ccf1ffa8;
   border-radius: 12px;
   font-size: 12px;
   margin-bottom: 8px;
+  background: var(--bg-category);
+  color: var(--text-secondary);
 }
 .card-title {
   font-size: 18px;
   margin-bottom: 8px;
-  color: #222;
+
+  color: var(--text-primary);
 }
 .card-summary {
   font-size: 14px;
-  color: #666;
+
   line-height: 1.4;
   margin-bottom: 12px;
+  color: var(--text-secondary);
 }
-
 .card-date {
   font-size: 12px;
-  color: #999;
+  color: var(--text-tertiary);
 }
 </style>

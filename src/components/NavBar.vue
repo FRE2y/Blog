@@ -1,5 +1,7 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import { useDarkMode } from '@/composables/useDarkMode'
+const { isDark, toggleDark } = useDarkMode()
 </script>
 
 <template>
@@ -8,6 +10,7 @@ import { RouterLink } from 'vue-router'
     <nav>
       <RouterLink to="/">主页</RouterLink>
       <RouterLink to="/post/1">最新文章</RouterLink>
+      <button class="theme-btn" @click="toggleDark">{{ isDark ? '☀亮色' : '🌙黑暗' }}</button>
     </nav>
   </header>
 </template>
@@ -21,17 +24,26 @@ import { RouterLink } from 'vue-router'
   top: 0;
   align-items: center;
   padding: 16px 40px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--bg-navbar);
+  box-shadow: var(--shadow-navbar);
+  transition: background 0.3s ease;
 }
-
 .navbar h1 {
   font-size: 24px;
-  color: #266eda;
+  color: var(--text-accent);
 }
 .navbar a {
   margin-left: 20px;
   text-decoration: none;
-  color: #333;
+  color: var(--text-primary);
+}
+.theme-btn {
+  background: var(--bg-navbar);
+  margin-left: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: background 0.3s ease;
 }
 </style>

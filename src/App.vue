@@ -39,8 +39,12 @@ body {
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
-  background: #f5f5f5;
-  color: #333;
+
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
 html,
@@ -55,28 +59,6 @@ body,
   flex-direction: column;
 }
 
-/* 头 */
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  align-items: center;
-  padding: 16px 40px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.navbar h1 {
-  font-size: 24px;
-  color: #266eda;
-}
-.navbar a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-} */
-
 /* 肚子 */
 .container {
   max-width: 960px;
@@ -89,9 +71,11 @@ body,
   margin-top: auto;
   text-align: center;
   padding: 12px;
-  color: #999;
+
   font-size: 14px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid;
   bottom: 0;
+  color: var(--text-tertiary);
+  border-top-color: var(--border-color);
 }
 </style>
