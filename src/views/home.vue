@@ -29,27 +29,54 @@ onMounted(() => {
   fetchPosts()
 })
 //标签分类筛选功能
+const activeCategory = ref('全部')
+//     所有标签
 const categories = computed(() => {
   const all = articles.value.map((a) => a.category)
   return ['全部', ...new Set(all)]
 })
-// 当前选中标签
-const activeCategory = ref('全部')
-// 根据标签过滤文章
+
+//      filteredArticles根据标签过滤文章
 const filteredArticles = computed(() => {
-  if (activeCategory.value === '全部') {
-    return articles.value
+  let res = articles.value
+  // console.log(res)
+  //    根据标签筛选
+  if (activeCategory.value !== '全部') {
+    res = res.filter((a) => a.category === activeCategory.value)
   }
-  return articles.value.filter((a) => a.category === activeCategory.value)
+
+  if (keyword.value.trim()) {
+    const kw = keyword.value.trim().toLowerCase()
+    res = res.filter(
+      (a) => a.title.toLowerCase().includes(kw) || a.summary.toLowerCase().includes(kw),
+    )
+  }
+  return res
 })
+
+//      处理CategoryFilter传来的参数
 function handleUpdate(cat) {
   activeCategory.value = cat
 }
+
+// 搜索功能
+const keyword = ref('')
 </script>
 
 <template>
   <div class="home">
     <h2 v-if="articles.length" class="section-title">动态</h2>
+
+    <!-- 搜索框 -->
+    <div class="search-bar">
+      <input
+        v-model="keyword"
+        type="text"
+        placeholder="搜索文章标题或摘要..."
+        class="search-input"
+      />
+      <span v-if="keyword" class="clear-btn" @click="keyword = ''">×</span>
+    </div>
     <!-- 标签分类筛选 -->
     <CategoryFilter
       :categories="categories"
@@ -113,5 +140,29 @@ function handleUpdate(cat) {
   margin-left: 10px;
   padding: 4px 12px;
   cursor: pointer;
+}
+
+.search-bar {
+  position: relative;
+  margin-bottom: 20px;
+}
+.search-input {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  border: 2px solid #77ccfd;
+  border-radius: 12px;
+  outline: none;
+}
+.search-input:focus {
+  border-color: rgb(47, 135, 175);
+}
+.clear-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #838282;
+  font-size: 20px;
 }
 </style>
