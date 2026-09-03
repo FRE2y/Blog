@@ -2,31 +2,10 @@
 import { RouterLink, useRoute } from 'vue-router'
 
 import { computed, ref, onMounted } from 'vue'
-
+import { usePosts } from '@/composables/usePosts'
 const route = useRoute()
 const id = Number(route.params.id)
-
-const articles = ref([])
-const isLoading = ref(true)
-const error = ref(null)
-
-async function fetchPosts() {
-  isLoading.value = true
-  error.value = null
-  try {
-    const response = await fetch('/testData.json')
-    if (!response.ok) {
-      throw new Error(`加载失败 ${response.status}`)
-    }
-    const data = await response.json()
-    articles.value = data
-  } catch (err) {
-    error.value = err.message
-    console.error(`文章数据加载失败：`, err)
-  } finally {
-    isLoading.value = false
-  }
-}
+const { fetchPosts, articles, isLoading, error } = usePosts()
 onMounted(() => {
   fetchPosts()
 })
